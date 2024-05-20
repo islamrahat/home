@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="display" readonly> <br>
+        <button onclick="btnSelect('7')">7</button>
+        <button onclick="btnSelect('8')">8</button>
+        <button onclick="btnSelect('9')">9</button>
+        <button onclick="btnSelect('+')" class="operator">+</button>
+        <button onclick="btnSelect('4')">4</button>
+        <button onclick="btnSelect('5')">5</button>
+        <button onclick="btnSelect('6')">6</button>
+        <button onclick="btnSelect('-')" class="operator">-</button>
+        <button onclick="btnSelect('1')">1</button>
+        <button onclick="btnSelect('2')">2</button>
+        <button onclick="btnSelect('3')">3</button>
+        <button onclick="btnSelect('*')" class="operator">*</button>
+        <button onclick="btnClear()" class="clear">C</button>
+        <button onclick="btnSelect('0')">0</button>
+        <button onclick="btnSelect('.')">.</button>
+        <button onclick="btnSelect('/')" class="operator">/</button>
+        <button onclick="calculate()" class="operator" id="equal">=</button>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

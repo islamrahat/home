@@ -1,0 +1,32 @@
+*{
+    background-color: #153448;
+    margin: 10px;
+}
+
+.headline{
+    color: #DFD0B8;
+    font-family: 'Hey August';
+    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 120px;
+}
+
+.projects{
+    color: #948979;
+    font-family: 'Hindenburg';
+    font-size: 50px;
+}
+button{
+    background: #3C5B6F;
+    color: #DFD0B8;
+    font-family: 'Puerto';
+    padding: 10px 15px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+button:hover{
+    background: #DFD0B8;
+    color: #3C5B6F;
+    transition: 0.3s;
+}
