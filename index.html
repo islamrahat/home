@@ -3,25 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IslamRahat</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="theme-color" content="#000">
+    <meta name="theme-color" content="#0f0f0f">
+    <title>Portfolio</title>
 </head>
 <body>
-    <div class="banner">
-        <div class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="Projects/index.html" target="_blank">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-        </div>
-        <div class="title">
-            <h1>Welcome to My Website</h1>
-            <p>This is my demo website where I upload and check my projects if they work.</p> <br>
-            <button onclick="location.href='Projects/index.html'">Go To Projects</button>
-        </div>
+        <!-- Navbar -->
+    <nav>
+        <div><span class="logo">RAHATUL ISLAM</span></div>
+     <div>
+            <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </div>
+    </nav>
+    <!-- Home -->
+    <section class="home" id="home">
+        <h1>Home</h1>
+        <div class="profile-pic">
+            <img src="images/profile-pic-avatar.png" height="200px" width="200px">
+        </div>
+        <div class="name">Muhammad Rahatul Islam</div>
+    <div class="about-text">
+            <h2>I'm a <span class="changing-txt"></span></h2>
+    </div>
+        <div class="btn">
+            <button onclick="location.href='#projects'">Explore Projects</button>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects">
+        <div class="projects">
+            <h1>Latest Projects</h1>
+            <p>Here are some of the latest projects I worked on</p>
+        </div>
+    <div class="project-container">
+        <div class="box1 projects-btn" onclick="location.href='calculator/new/index.html'">New Calculator</div>
+        <div class="box2 projects-btn" onclick="location.href='calculator/old/index.html'">Old Calculator</div>
+        <div class="box3 projects-btn" onclick="location.href='#'">Coming Soon...</div>
+        <div class="box4 projects-btn" onclick="location.href='#'">Coming Soon...</div>
+    </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+        <h1>About Me</h1>
+    </section>
+    <section class="contact" id="contact">
+        <h1>Contact info</h1>
+        <p><ion-icon name="navigate-outline"></ion-icon> H.S. Hills Dale, Jalalabad Cooperative Housing Society, West Khulshi, Chittagong-4225, Bangladesh </p>
+        <p><ion-icon name="mail-outline"></ion-icon> islamrahat701@gmail.com</p>
+        <p><ion-icon name="call-outline"></ion-icon> +8801516529784 </p> <br><br><br><br>
+        <p class="logo-container">
+                <table align="center" cellpadding="20px">
+                    <tr>
+                        <td onclick="location.href=''"><ion-icon name="logo-youtube"></ion-icon><br>YouTube</td>
+                        <td onclick="location.href=''"><ion-icon name="logo-facebook"></ion-icon><br>Facebook</td>
+                        <td onclick="location.href=''"><ion-icon name="logo-whatsapp"></ion-icon><br>WhatsApp</td>
+                        <td onclick="location.href='https://www.linkedin.com/in/islam-rahat-701-cse'"><ion-icon name="logo-linkedin"></ion-icon><br>Linkedin</td>
+                    </tr>
+                </table>
+        </p>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        var typed = new Typed('.changing-txt', {
+            strings: ['Developer', 'CSE Student', 'Designer'],
+            typeSpeed: 50,
+            backSpeed: 50
+        });
+    </script>
 </body>
 </html>

@@ -1,52 +1,133 @@
-*{
-    margin: 0px;
+body{
+    font-family: 'Poppins';
+    background-color: #0f0f0f;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
-.banner{
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/home_bg.jpg);
-    background-size: 100%;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
+nav, .nav-links{
+    display: flex;
+    scroll-behavior: smooth;
 }
-ul a{
-    text-decoration: none;
-    font-family: 'Puerto';
+.logo{
+    font-size: 20px;
     color: #fff;
 }
-ul li{
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    border-bottom: 2px solid #fff;
+}
+.nav-links{
+    gap: 2rem;
     list-style: none;
-    display: inline-block;
-    margin: 50px 30px;
-    position: relative;
 }
-ul li::after{
-    content: '';
-    height: 2px;
-    background: aqua;
-    width: 0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    margin-bottom: -8px;
-}
-ul li:hover::after{
-    width: 100%;
-    transition: 0.5s;
-}
-.title {
+.nav-links a{
+    text-decoration: none;
     color: #fff;
-    font-family: 'Hey August';
-    position: absolute;
+}
+.nav-links a:hover{
+    color: #ffff72;
+}
+section{
+    padding-top: 4vh;
+    height: 94vh;
     width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
+    justify-content: center;
+    color: #fff;
     text-align: center;
-    font-size: 3ch;
+    border-bottom: 2px solid #fff;
+    scroll-snap-align: start;
+    overflow: scroll;
 }
-.title button{
-    height: 40px;
-    width: 110px;
-    background-color: rgba(0,0,0,0);
+.profile-pic{
+    position: relative;
+    top: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+h3{
     color: #fff;
-    border-radius: 10px;
+}
+h2{
+    color: #fff;
+}
+h2 span{
+    color: #ffff72;
+}
+.btn{
+    position: relative;
+    top: 50px;
+}
+.btn button{
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: #ffff72;
+    background-color: #0f0f0f;
+    border: 2px solid #ffff72;
+    border-radius: 24px;
+    box-shadow: 1px 1px 4px #ffff72;
+}
+.btn button:hover{
+    background-color: #ffff72;
+    color: #0f0f0f;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.project-container{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: grid;
+}
+section h1{
+    color: #ffff72;
+    font-size: 2rem;
+}
+.about-text{
+    position: relative;
+    top: 50px;
+}
+.name{
+    position: relative;
+    top: 70px;
+    font-size: 1.5rem;
+}
+.project-container{
+    margin-top: 80px;
+    display: grid;
+    grid-template-rows: repeat(4, 80px);
+    grid-template-columns: repeat(4, 100px);
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1em;
+    grid-template-areas: 
+    'header header header header'
+    'main1 main1 main main'
+    'main1 main1 main main'
+    'footer footer footer footer';
+}
+.projects-btn{
+    border: 2px solid #fff;
+    height: 100%;
+}
+.box1{
+    grid-area: header;
+}
+.box2{
+    grid-area: main1;
+}
+.box3{
+    grid-area: main;
+}
+.box4{
+    grid-area: footer;
+}
+.projects-btn:hover{
+    background-color: #fff;
+    color: #0f0f0f;
+    transition: 0.4s;
+}
+table tr td{
+    cursor: pointer;
 }
